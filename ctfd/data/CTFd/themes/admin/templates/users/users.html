@@ -113,7 +113,7 @@
 						</td>
 						<td class="team-email d-none d-md-table-cell d-lg-table-cell" value="{{ user.email }}">
 							{% if user.email %}
-								<a href="mailto:{{ user.email }}" target="_blank">{{ user.email | truncate(32) }}</a>
+								<a href="mailto:{{ user.email }}" target="_blank" rel="noopener noreferrer">{{ user.email | truncate(32) }}</a>
 							{% endif %}
 						</td>
 						<td class="team-country text-center" value="{{ user.country if user.country is not none }}">
